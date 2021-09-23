@@ -138,3 +138,10 @@ h1 {
   font-family: 'Aileron', sans-serif;
   font-weight: 900;
 }
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 10px;
+}
