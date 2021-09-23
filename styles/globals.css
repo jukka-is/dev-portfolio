@@ -1,16 +1,140 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: 'Cotham Sans';
+  src: url('../public/fonts/cothamsans/CothamSans.woff2') format('woff2'),
+    url('../public/fonts/cothamsans/CothamSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'Aileron';
+  src: url('../public/fonts/aileron/Aileron-Black.woff2') format('woff2'),
+    url('../public/fonts/aileron/Aileron-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
+
+/* RemixIcon */
+
+@font-face {
+  font-family: 'remixicon';
+  src: url('../public/fonts/remixicon/remixicon.woff2?t=1632396921058')
+      format('woff2'),
+    url('../public/fonts/remixicon/remixicon.woff?t=1632396921058')
+      format('woff'),
+    url('../public/fonts/remixicon/remixicon.ttf?t=1632396921058')
+      format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  font-display: swap;
+}
+
+[class^='ri-'],
+[class*='ri-'] {
+  font-family: 'remixicon' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ri-lg {
+  font-size: 1.3333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+.ri-xl {
+  font-size: 1.5em;
+  line-height: 0.6666em;
+  vertical-align: -0.075em;
+}
+.ri-xxs {
+  font-size: 0.5em;
+}
+.ri-xs {
+  font-size: 0.75em;
+}
+.ri-sm {
+  font-size: 0.875em;
+}
+.ri-1x {
+  font-size: 1em;
+}
+.ri-2x {
+  font-size: 2em;
+}
+.ri-3x {
+  font-size: 3em;
+}
+.ri-4x {
+  font-size: 4em;
+}
+.ri-5x {
+  font-size: 5em;
+}
+.ri-6x {
+  font-size: 6em;
+}
+.ri-7x {
+  font-size: 7em;
+}
+.ri-8x {
+  font-size: 8em;
+}
+.ri-9x {
+  font-size: 9em;
+}
+.ri-10x {
+  font-size: 10em;
+}
+.ri-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.ri-github-fill:before {
+  content: '\edca';
+}
+.ri-twitter-fill:before {
+  content: '\f23a';
+}
+.ri-mail-line:before {
+  content: '\eef6';
+}
+.ri-price-tag-3-line:before {
+  content: '\f023';
+}
+.ri-price-tag-3-fill:before {
+  content: '\f022';
+}
+.ri-phone-fill:before {
+  content: '\efe9';
+}
+.ri-mail-fill:before {
+  content: '\eef3';
+}
+.ri-links-line:before {
+  content: '\eeb8';
+}
+.ri-add-box-fill:before {
+  content: '\ea0e';
+}
+.ri-checkbox-indeterminate-fill:before {
+  content: '\eb83';
+}
+
+/* body */
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cotham Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Aileron', sans-serif;
+  font-weight: 900;
 }
