@@ -10,7 +10,14 @@ export default function Home({ portfolioItems, techTags }) {
   return (
     <>
       <Head>
+        <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
         <title>Web Developer portfolio - Jukka Isokoski</title>
+        <meta name="description" content="Welcome to my portfolio! Here you'll find a selection of my freelance client works as well as some of my personal projects." />
+        <meta name="keywords" content="Wordpress, WooCommerce, javascript, css, sass, bootstrap, php, node.js, nextjs" />
+        <meta name="author" content="Jukka Isokoski" />
       </Head>
 
       <header className="title">
