@@ -1,7 +1,7 @@
 ---
 title: 'Shop for Sebastian'
-description: 'Custom theme for WooCommerce webshop'
-techs: 'Wordpress, Woocommerce, scss, javascript, bootstrap'
+description: 'WooCommerce webshop'
+techs: 'wordpress, woocommerce, sass, javascript, bootstrap'
 excerpt: 'Project included designing and developing a custom theme & functionalities for WooCommerce webshop'
 cover_image: '/images/portfolio/item-1-1.jpg'
 url: 'https://shopforsebastian.com'
