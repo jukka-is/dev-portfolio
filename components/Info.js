@@ -4,7 +4,7 @@ const Info = ({ item }) => {
   return (
     <>
       <div className="two-line-divider" />
-      <article class="about">
+      <article className="about">
         <h2>About me</h2>
         <p>
           Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est
