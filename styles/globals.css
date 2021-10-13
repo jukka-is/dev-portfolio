@@ -1,10 +1,12 @@
 :root {
   --jik-gray-9: #222222;
+  --jik-gray-7: #494949;
   --jik-gray-5: #707070;
   --jik-gray-3: #b7b7b7;
   --jik-gray-2: #e9e9e9;
   --jik-gray-1: #f4f4f4;
-  --jik-mid-teal: #579baf;
+  --jik-light-teal: #579baf;
+  --jik-mid-teal: #447b8b;
   --jik-dark-teal: #305965;
 }
 
@@ -154,7 +156,7 @@ a {
 }
 
 a:hover {
-  color: var(--jik-mid-teal);
+  color: var(--jik-light-teal);
 }
 
 h1,
@@ -166,7 +168,7 @@ h4 {
 }
 
 h1 {
-  color: var(--jik-mid-teal);
+  color: var(--jik-light-teal);
 }
 
 .container {
@@ -184,11 +186,11 @@ h1 {
 }
 
 .tech-tag {
-  color: var(--jik-mid-teal);
+  color: var(--jik-light-teal);
   text-transform: uppercase;
   font-size: 0.8rem;
   padding: 5px 10px;
-  border: 1px solid var(--jik-mid-teal);
+  border: 1px solid var(--jik-light-teal);
   border-radius: 5px;
 }
 
@@ -210,6 +212,7 @@ a.icon-link {
   flex-direction: column;
   align-items: center;
   width: fit-content;
+  margin-top: 1rem;
   margin-bottom: 4rem;
 }
 
@@ -249,6 +252,7 @@ a.icon-link {
   font-size: 3.5rem;
   line-height: 3.2rem;
   color: var(--jik-gray-3);
+  margin-top: 1rem;
   margin-bottom: 2rem;
   max-width: min-content;
 }
@@ -301,6 +305,8 @@ a.icon-link {
   font-size: 0.6rem;
   margin: 2px 4px 2px 0px;
   padding: 2px 4px;
+  color: var(--jik-dark-teal);
+  border-color: var(--jik-dark-teal);
 }
 
 .portfolio .item .heading-3 {
@@ -310,11 +316,11 @@ a.icon-link {
 }
 
 .portfolio .item .excerpt {
-  color: var(--jik-gray-5);
+  color: var(--jik-gray-7);
 }
 
 .portfolio .item .button {
-  color: var(--jik-mid-teal);
+  color: var(--jik-light-teal);
   align-self: center;
 }
 
@@ -383,7 +389,7 @@ a.icon-link {
 
 .footer {
   background-color: var(--jik-dark-teal);
-  padding: 10px 0px 7px 0px;
+  padding: 10px 0px 5px 0px;
   font-size: 0.8rem;
 }
 
@@ -391,11 +397,8 @@ a.icon-link {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.footer .footer-content p:first-of-type {
-  margin-right: 20px;
-  margin-bottom: 7px;
+  column-gap: 20px;
+  row-gap: 10px;
 }
 
 .footer .footer-content .icon-link {
@@ -409,6 +412,22 @@ a.icon-link {
 /* Mobile styles */
 
 @media only screen and (max-width: 680px) {
+  .title .main-title .dev {
+    font-size: 30vw;
+    line-height: 25vw;
+  }
+  .title .main-title .rest {
+    font-size: 7.5vw;
+  }
+
+  .title .subhead .text {
+    max-width: 350px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: right;
+    margin-bottom: 2rem;
+  }
+
   .portfolio .item {
     margin-right: auto;
     margin-left: auto;
@@ -431,4 +450,7 @@ a.icon-link {
     font-size: 2rem;
     text-align: unset;
   }
+}
+
+@media only screen and (max-width: 480px) {
 }

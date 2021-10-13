@@ -91,8 +91,10 @@ export async function getStaticProps() {
     };
   });
 
+  // get tech tags for whole portfolio
   const techTags = [];
 
+  // go through all portfolio items and add missing tags to techTags
   portfolioItems.map((item) => {
     const itemsTechs = item.meta.techs.split(', ');
 
@@ -102,8 +104,6 @@ export async function getStaticProps() {
       }
     });
   });
-
-  console.log(techTags);
 
   return {
     props: {
