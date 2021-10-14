@@ -25,7 +25,12 @@ export default function PortfolioItem({ item, openModal }) {
         <p className="excerpt">{item.meta.excerpt}</p>
       </div>
 
-      <button className="button" type="button" onClick={() => openModal(item)}>
+      <button
+        className="button"
+        type="button"
+        onClick={() => openModal(item)}
+        aria-label={'Read more about ' + item.meta.title}
+      >
         <i className="ri-2x ri-add-box-fill" />
       </button>
     </article>

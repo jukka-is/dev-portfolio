@@ -259,6 +259,10 @@ a.icon-link {
   margin: 5px 0px 5px 10px;
 }
 
+.title .subhead .tech-tag:hover {
+  border-color: var(--jik-yellow);
+}
+
 /* Portfolio section */
 
 .portfolio .heading-2 {
