@@ -1,14 +1,19 @@
+import SingleTag from '../components/SingleTag';
+
 export default function PortfolioItem({ item }) {
   return (
     <article className="item">
-
       <div className="content">
-        <img className="image" src={item.meta.cover_image} alt={item.meta.title} />
+        <img
+          className="image"
+          src={item.meta.cover_image}
+          alt={item.meta.title}
+        />
         <p className="description">{item.meta.description}</p>
         <h3 className="heading-3">{item.meta.title}</h3>
         <ul className="tech-tags">
-          {item.meta.techs.split(', ').map((tag, index) => (
-            <li key={item.slug + '-' + tag} className="tech-tag">{tag}</li>
+          {item.techs.map((tag, index) => (
+            <SingleTag key={item.slug + '-tag-' + index} tag={tag} />
           ))}
         </ul>
         <p className="excerpt">{item.meta.excerpt}</p>

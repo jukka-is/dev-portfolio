@@ -8,6 +8,7 @@
   --jik-light-teal: #579baf;
   --jik-mid-teal: #447b8b;
   --jik-dark-teal: #305965;
+  --jik-yellow: #f3ca42;
 }
 
 @font-face {
@@ -155,6 +156,11 @@ a {
   color: unset;
 }
 
+button {
+  background: unset;
+  cursor: pointer;
+}
+
 a:hover {
   color: var(--jik-light-teal);
 }
@@ -192,6 +198,12 @@ h1 {
   padding: 5px 10px;
   border: 1px solid var(--jik-light-teal);
   border-radius: 5px;
+}
+
+.tech-tag.active {
+  background: var(--jik-yellow);
+  color: var(--jik-gray-9);
+  border: 1px solid var(--jik-yellow);
 }
 
 a.icon-link {
@@ -304,9 +316,13 @@ a.icon-link {
 .portfolio .item .tech-tag {
   font-size: 0.6rem;
   margin: 2px 4px 2px 0px;
-  padding: 2px 4px;
+  padding: 4px 4px 2px 4px;
   color: var(--jik-dark-teal);
   border-color: var(--jik-dark-teal);
+}
+
+.portfolio .item .tech-tag.active {
+  color: var(--jik-gray-9);
 }
 
 .portfolio .item .heading-3 {

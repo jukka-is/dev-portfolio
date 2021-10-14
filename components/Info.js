@@ -1,4 +1,5 @@
 import Button from '../components/Button';
+import SingleTag from '../components/SingleTag';
 
 const Info = ({ item }) => {
   return (
@@ -51,10 +52,8 @@ const Info = ({ item }) => {
         <div className="content">
           <p>{item.meta.excerpt}</p>
           <ul className="tech-tags">
-            {item.meta.techs.split(', ').map((tag, index) => (
-              <li key={item.slug + '-' + tag} className="tech-tag">
-                {tag}
-              </li>
+            {item.techs.map((tag, index) => (
+              <SingleTag key={item.slug + '-tag-' + index} tag={tag} />
             ))}
           </ul>
         </div>

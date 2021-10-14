@@ -1,12 +1,41 @@
+import { useState } from 'react';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import PortfolioItem from '../components/PortfolioItem';
-import TechTags from '../components/TechTags';
+import TagList from '../components/TagList';
 import Info from '../components/Info';
 import Head from 'next/head';
+import { timingSafeEqual } from 'crypto';
 
-export default function Home({ portfolioItems, techTags }) {
+export default function Home({ items, tags }) {
+  const [techTags, setTechTags] = useState(tags);
+  const [portfolioItems, setPortfolioItems] = useState(items);
+
+  const toggleTag = (toggledTag) => {
+    // update changes to title area's tech tags
+    const updatedTags = [...techTags];
+    techTags.forEach((tag, index) => {
+      if (toggledTag.name === tag.name) {
+        updatedTags[index] = { ...updatedTags[index], isActive: !tag.isActive };
+      }
+    });
+    setTechTags(updatedTags);
+
+    // update changes to portfolio items' tech tags
+    const updatedPortfolioItems = [...portfolioItems];
+    portfolioItems.forEach((item, i) => {
+      item.techs.forEach((tag, j) => {
+        if (toggledTag.name === tag.name) {
+          updatedPortfolioItems[i].techs[j] = {
+            ...updatedPortfolioItems[i].techs[j],
+            isActive: !tag.isActive,
+          };
+        }
+      });
+    });
+  };
+
   return (
     <>
       <Head>
@@ -53,7 +82,7 @@ export default function Home({ portfolioItems, techTags }) {
             posuere consectetur est at lobortis.
           </p>
           <ul className="tech-tags">
-            <TechTags tags={techTags} />
+            <TagList tags={techTags} toggleTag={toggleTag} />
           </ul>
         </div>
       </header>
@@ -96,7 +125,7 @@ export async function getStaticProps() {
   const files = fs.readdirSync(path.join('portfolio_items'));
 
   //create slug and get frontmatter for each portfolio item
-  const portfolioItems = files.map((filename) => {
+  const items = files.map((filename) => {
     const slug = filename.replace('.md', '');
 
     //frontmatter
@@ -106,30 +135,38 @@ export async function getStaticProps() {
     );
     const { data: meta } = matter(markdownWithMeta);
 
+    const techs = meta.techs.split(', ').map((name) => {
+      return {
+        name: name,
+        isActive: false,
+      };
+    });
+
     return {
       slug,
       meta,
+      techs,
     };
   });
 
   // get tech tags for whole portfolio
-  const techTags = [];
+  const tags = [];
 
-  // go through all portfolio items and add missing tags to techTags
-  portfolioItems.map((item) => {
+  // go through all portfolio items and add missing tags only once
+  items.map((item) => {
     const itemsTechs = item.meta.techs.split(', ');
 
-    itemsTechs.forEach((tech) => {
-      if (!techTags.includes(tech)) {
-        techTags.push(tech);
+    item.techs.forEach((newTech) => {
+      if (!tags.find((existingTech) => existingTech.name === newTech.name)) {
+        tags.push(newTech);
       }
     });
   });
 
   return {
     props: {
-      portfolioItems: portfolioItems,
-      techTags: techTags,
+      items: items,
+      tags: tags,
     },
   };
 }
