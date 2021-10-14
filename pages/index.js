@@ -24,6 +24,7 @@ export default function Home({ items, tags }) {
 
     // update changes to portfolio items' tech tags
     const updatedPortfolioItems = [...portfolioItems];
+
     portfolioItems.forEach((item, i) => {
       item.techs.forEach((tag, j) => {
         if (toggledTag.name === tag.name) {
@@ -34,6 +35,19 @@ export default function Home({ items, tags }) {
         }
       });
     });
+
+    // update portfolio items' state whether item has active tags or not
+    updatedPortfolioItems.forEach((item, i) => {
+      let status = false;
+      item.techs.forEach((tag) => {
+        if (tag.isActive) {
+          status = true;
+        }
+        updatedPortfolioItems[i].hasActiveTags = status;
+      });
+    });
+
+    setPortfolioItems(updatedPortfolioItems);
   };
 
   return (
@@ -127,6 +141,8 @@ export async function getStaticProps() {
   //create slug and get frontmatter for each portfolio item
   const items = files.map((filename) => {
     const slug = filename.replace('.md', '');
+    const isOpened = false;
+    const hasActiveTags = false;
 
     //frontmatter
     const markdownWithMeta = fs.readFileSync(
@@ -146,6 +162,8 @@ export async function getStaticProps() {
       slug,
       meta,
       techs,
+      isOpened,
+      hasActiveTags,
     };
   });
 

@@ -287,8 +287,14 @@ a.icon-link {
   flex-direction: column;
   background-color: var(--jik-gray-2);
   color: var(--jik-gray-9);
-  padding: 15px;
+  padding: 15px 15px 15px 15px;
   max-width: 460px;
+  border-top: unset;
+}
+
+.portfolio .item.active-tags {
+  border-top: 10px solid var(--jik-yellow);
+  padding: 5px 15px 15px 15px;
 }
 
 .portfolio .item .content {

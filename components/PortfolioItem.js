@@ -1,8 +1,10 @@
 import SingleTag from '../components/SingleTag';
 
 export default function PortfolioItem({ item }) {
+  const articleClassNames = item.hasActiveTags ? 'item active-tags' : 'item';
+
   return (
-    <article className="item">
+    <article className={articleClassNames}>
       <div className="content">
         <img
           className="image"
