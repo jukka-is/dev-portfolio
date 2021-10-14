@@ -5,12 +5,17 @@ import matter from 'gray-matter';
 import PortfolioItem from '../components/PortfolioItem';
 import TagList from '../components/TagList';
 import Info from '../components/Info';
+import Modal from '../components/Modal';
 import Head from 'next/head';
 import { timingSafeEqual } from 'crypto';
 
 export default function Home({ items, tags }) {
   const [techTags, setTechTags] = useState(tags);
   const [portfolioItems, setPortfolioItems] = useState(items);
+  const [modalState, setModalState] = useState({
+    item: undefined,
+    isActive: false,
+  });
 
   const toggleTag = (toggledTag) => {
     // update changes to title area's tech tags
@@ -50,6 +55,16 @@ export default function Home({ items, tags }) {
     setPortfolioItems(updatedPortfolioItems);
   };
 
+  const openModal = (item) => {
+    const updatedModalState = { item: item, isActive: true };
+    setModalState(updatedModalState);
+  };
+
+  const closeModal = () => {
+    const closedModalState = { item: undefined, isActive: false };
+    setModalState(closedModalState);
+  };
+
   return (
     <>
       <Head>
@@ -84,6 +99,8 @@ export default function Home({ items, tags }) {
         <meta name="author" content="Jukka Isokoski" />
       </Head>
 
+      <Modal modalState={modalState} closeModal={closeModal} />
+
       <header className="title">
         <h1 className="main-title">
           <span className="dev">dev.</span>
@@ -107,7 +124,11 @@ export default function Home({ items, tags }) {
           {portfolioItems
             .filter((item) => item.meta.category === 'client')
             .map((item, index) => (
-              <PortfolioItem key={'client-' + index} item={item} />
+              <PortfolioItem
+                key={'client-' + index}
+                item={item}
+                openModal={openModal}
+              />
             ))}
         </div>
       </section>
@@ -118,7 +139,11 @@ export default function Home({ items, tags }) {
           {portfolioItems
             .filter((item) => item.meta.category === 'personal')
             .map((item, index) => (
-              <PortfolioItem key={'personal-' + index} item={item} />
+              <PortfolioItem
+                key={'personal-' + index}
+                item={item}
+                openModal={openModal}
+              />
             ))}
         </div>
       </section>

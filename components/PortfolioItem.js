@@ -1,6 +1,6 @@
 import SingleTag from '../components/SingleTag';
 
-export default function PortfolioItem({ item }) {
+export default function PortfolioItem({ item, openModal }) {
   const articleClassNames = item.hasActiveTags ? 'item active-tags' : 'item';
 
   return (
@@ -21,9 +21,9 @@ export default function PortfolioItem({ item }) {
         <p className="excerpt">{item.meta.excerpt}</p>
       </div>
 
-      <div className="button">
+      <button className="button" type="button" onClick={() => openModal(item)}>
         <i className="ri-2x ri-add-box-fill" />
-      </div>
+      </button>
     </article>
   );
 }
