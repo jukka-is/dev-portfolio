@@ -7,6 +7,7 @@ cover_image: '/images/portfolio/item-7-1.jpg'
 url: 'https://tekstiilitaiteilijattexo.fi/'
 category: 'client'
 client_name: 'Tekstiilitaiteilijat TEXO ry'
+id: 7
 ---
 
 ### Tekstiilitaiteilijat TEXO ornare sem lacinia

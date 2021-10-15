@@ -1,7 +1,7 @@
 import Button from '../components/Button';
 import SingleTag from '../components/SingleTag';
 
-const Info = ({ item }) => {
+const Info = ({ item, socialLinks }) => {
   return (
     <>
       <div className="two-line-divider" />
@@ -25,24 +25,15 @@ const Info = ({ item }) => {
           nec elit.
         </p>
         <div className="icon-links">
-          <Button
-            buttonType="icon-link"
-            buttonClass="ri-xl ri-github-fill"
-            buttonUrl="https://github.com/aaxxiiss"
-            buttonTitle="Github"
-          />
-          <Button
-            buttonType="icon-link"
-            buttonClass="ri-xl ri-twitter-fill"
-            buttonUrl="https://twitter.com/jukkaisokoski"
-            buttonTitle="Twitter"
-          />
-          <Button
-            buttonType="icon-link"
-            buttonClass="ri-xl ri-mail-line"
-            buttonUrl="mailto:mail@jukkaisokoski.fi"
-            buttonTitle="email"
-          />
+          {socialLinks.map((socialLink) => (
+            <Button
+              key={'info-link-' + socialLink.id}
+              buttonType="icon-link"
+              buttonClass={'ri-xl ' + socialLink.iconClasses}
+              buttonUrl={socialLink.url}
+              buttonTitle={socialLink.title}
+            />
+          ))}
         </div>
       </article>
       <article className="ps">

@@ -1,11 +1,12 @@
 ---
-title: 'Web Application'
-description: 'Hike Logger'
-techs: 'node.js, javascript, mongodb, css, google api'
+title: 'Simple Class Based Shipping'
+description: 'Custom shipping plugin for WooCommerce'
+techs: 'wordpress, woocommerce, php, javascript, git'
 excerpt: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'
-cover_image: '/images/portfolio/item-11-1.jpg'
-url: 'https://github.com/aaxxiiss/hike-logger'
+cover_image: '/images/portfolio/item-9-1.jpg'
+url: 'https://github.com/aaxxiiss/simple-class-based-shipping-WC'
 category: 'personal'
+id: 9
 ---
 
 ### Simple Class Based Shipping est at lobortis

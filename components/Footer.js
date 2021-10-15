@@ -1,6 +1,6 @@
 import Button from '../components/Button';
 
-const Footer = () => {
+const Footer = ({ socialLinks }) => {
   return (
     <footer className="footer">
       <div className="container footer-content">
@@ -9,24 +9,15 @@ const Footer = () => {
           You are Welcome!
         </p>
         <div className="icon-links">
-          <Button
-            buttonType="icon-link"
-            buttonClass="ri-footer ri-github-fill"
-            buttonUrl="https://github.com/aaxxiiss"
-            buttonTitle="Github"
-          />
-          <Button
-            buttonType="icon-link"
-            buttonClass="ri-footer ri-twitter-fill"
-            buttonUrl="https://twitter.com/jukkaisokoski"
-            buttonTitle="Twitter"
-          />
-          <Button
-            buttonType="icon-link"
-            buttonClass="ri-footer ri-mail-line"
-            buttonUrl="mailto:mail@jukkaisokoski.fi"
-            buttonTitle="email"
-          />
+          {socialLinks.map((socialLink) => (
+            <Button
+              key={'footer-link-' + socialLink.id}
+              buttonType="icon-link"
+              buttonClass={'ri-footer ' + socialLink.iconClasses}
+              buttonUrl={socialLink.url}
+              buttonTitle={socialLink.title}
+            />
+          ))}
         </div>
       </div>
     </footer>

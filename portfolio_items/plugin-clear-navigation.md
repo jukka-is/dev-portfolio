@@ -6,6 +6,7 @@ excerpt: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nib
 cover_image: '/images/portfolio/item-10-1.jpg'
 url: 'https://github.com/aaxxiiss/clean-navigation'
 category: 'personal'
+id: 10
 ---
 
 ### Clean Navigation Magna Nullam Lorem

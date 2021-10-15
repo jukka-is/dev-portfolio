@@ -19,7 +19,10 @@ export default function PortfolioItem({ item, openModal }) {
         <h3 className="heading-3">{item.meta.title}</h3>
         <ul className="tech-tags">
           {item.techs.map((tag, index) => (
-            <SingleTag key={item.slug + '-tag-' + index} tag={tag} />
+            <SingleTag
+              key={'item-' + item.meta.id + '-' + tag.name}
+              tag={tag}
+            />
           ))}
         </ul>
         <p className="excerpt">{item.meta.excerpt}</p>

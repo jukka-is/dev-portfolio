@@ -7,6 +7,7 @@ cover_image: '/images/portfolio/item-8-1.jpg'
 url: 'https://midoritsunoi.fi/'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
+id: 8
 ---
 
 ### Midori Tsunoi's portfolio Aenean lacinia bibendum nulla

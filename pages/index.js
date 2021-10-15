@@ -7,9 +7,10 @@ import TagList from '../components/TagList';
 import Info from '../components/Info';
 import Modal from '../components/Modal';
 import Head from 'next/head';
+import Footer from '../components/Footer.js';
 import { timingSafeEqual } from 'crypto';
 
-export default function Home({ items, tags }) {
+export default function Home({ items, tags, socialLinks }) {
   const [techTags, setTechTags] = useState(tags);
   const [portfolioItems, setPortfolioItems] = useState(items);
   const [modalState, setModalState] = useState({
@@ -67,94 +68,101 @@ export default function Home({ items, tags }) {
 
   return (
     <>
-      <Head>
-        <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/images/favicon/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/images/favicon/favicon-96x96.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/images/favicon/favicon-16x16.png"
-        />
-        <title>Web Developer portfolio - Jukka Isokoski</title>
-        <meta
-          name="description"
-          content="Welcome to my portfolio! Here you'll find a selection of my freelance client works as well as some of my personal projects."
-        />
-        <meta
-          name="keywords"
-          content="Wordpress, WooCommerce, javascript, css, sass, bootstrap, php, node.js, nextjs"
-        />
-        <meta name="author" content="Jukka Isokoski" />
-      </Head>
+      <main className="container">
+        <Head>
+          <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="/images/favicon/favicon-96x96.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/favicon/favicon-16x16.png"
+          />
+          <title>Web Developer portfolio - Jukka Isokoski</title>
+          <meta
+            name="description"
+            content="Welcome to my portfolio! Here you'll find a selection of my freelance client works as well as some of my personal projects."
+          />
+          <meta
+            name="keywords"
+            content="Wordpress, WooCommerce, javascript, css, sass, bootstrap, php, node.js, nextjs"
+          />
+          <meta name="author" content="Jukka Isokoski" />
+        </Head>
 
-      <Modal modalState={modalState} closeModal={closeModal} />
+        <Modal modalState={modalState} closeModal={closeModal} />
 
-      <header className="title">
-        <h1 className="main-title">
-          <span className="dev">dev.</span>
-          <span className="rest">jukkaisokoski.fi</span>
-        </h1>
-        <div className="subhead">
-          <p className="text">
-            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-            vestibulum. Donec id elit non mi porta gravida at eget metus. Sed
-            posuere consectetur est at lobortis.
-          </p>
-          <ul className="tech-tags">
-            <TagList tags={techTags} toggleTag={toggleTag} />
-          </ul>
-        </div>
-      </header>
+        <header className="title">
+          <h1 className="main-title">
+            <span className="dev">dev.</span>
+            <span className="rest">jukkaisokoski.fi</span>
+          </h1>
+          <div className="subhead">
+            <p className="text">
+              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+              vestibulum. Donec id elit non mi porta gravida at eget metus. Sed
+              posuere consectetur est at lobortis.
+            </p>
+            <ul className="tech-tags">
+              <TagList tags={techTags} toggleTag={toggleTag} />
+            </ul>
+          </div>
+        </header>
 
-      <section className="portfolio client-portfolio">
-        <h2 className="heading-2">Freelance client projects</h2>
-        <div className="grid">
+        <section className="portfolio client-portfolio">
+          <h2 className="heading-2">Freelance client projects</h2>
+          <div className="grid">
+            {portfolioItems
+              .filter((item) => item.meta.category === 'client')
+              .map((item, index) => (
+                <PortfolioItem
+                  key={'item-' + item.meta.id}
+                  item={item}
+                  openModal={openModal}
+                />
+              ))}
+          </div>
+        </section>
+
+        <section className="portfolio personal-portfolio">
+          <h2 className="heading-2">Personal projects</h2>
+          <div className="grid">
+            {portfolioItems
+              .filter((item) => item.meta.category === 'personal')
+              .map((item, index) => (
+                <PortfolioItem
+                  key={'item-' + item.meta.id}
+                  item={item}
+                  openModal={openModal}
+                />
+              ))}
+          </div>
+        </section>
+
+        <section className="info">
           {portfolioItems
-            .filter((item) => item.meta.category === 'client')
+            .filter((item) => item.meta.category === 'current')
             .map((item, index) => (
-              <PortfolioItem
-                key={'client-' + index}
+              <Info
+                key={'item-' + item.meta.id}
                 item={item}
-                openModal={openModal}
+                socialLinks={socialLinks}
               />
             ))}
-        </div>
-      </section>
-
-      <section className="portfolio personal-portfolio">
-        <h2 className="heading-2">Personal projects</h2>
-        <div className="grid">
-          {portfolioItems
-            .filter((item) => item.meta.category === 'personal')
-            .map((item, index) => (
-              <PortfolioItem
-                key={'personal-' + index}
-                item={item}
-                openModal={openModal}
-              />
-            ))}
-        </div>
-      </section>
-
-      <section className="info">
-        {portfolioItems
-          .filter((item) => item.meta.category === 'current')
-          .map((item, index) => (
-            <Info key={'current-' + index} item={item} />
-          ))}
-      </section>
+        </section>
+      </main>
+      <Footer socialLinks={socialLinks} />
     </>
   );
 }
@@ -192,6 +200,9 @@ export async function getStaticProps() {
     };
   });
 
+  // sort portfolio items by id
+  items.sort((a, b) => a.meta.id - b.meta.id);
+
   // get tech tags for whole portfolio
   const tags = [];
 
@@ -206,10 +217,32 @@ export async function getStaticProps() {
     });
   });
 
+  const socialLinks = [
+    {
+      id: 1,
+      title: 'Github',
+      url: 'https://github.com/aaxxiiss',
+      iconClasses: 'ri-github-fill',
+    },
+    {
+      id: 2,
+      title: 'Twitter',
+      url: 'https://twitter.com/jukkaisokoski',
+      iconClasses: 'ri-twitter-fill',
+    },
+    {
+      id: 3,
+      title: 'email',
+      url: 'mailto:mail@jukkaisokoski.fi',
+      iconClasses: 'ri-mail-line',
+    },
+  ];
+
   return {
     props: {
       items: items,
       tags: tags,
+      socialLinks: socialLinks,
     },
   };
 }

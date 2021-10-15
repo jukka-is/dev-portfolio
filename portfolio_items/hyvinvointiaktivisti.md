@@ -7,6 +7,7 @@ cover_image: '/images/portfolio/item-2-1.jpg'
 url: 'https://www.hyvinvointiaktivisti.fi/'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
+id: 2
 ---
 
 ### Hyvinvointi Praesent commodo cursus magna, vel scelerisque nisl consectetur et.

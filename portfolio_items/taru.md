@@ -7,6 +7,7 @@ cover_image: '/images/portfolio/item-5-1.jpg'
 url: 'https://taru.metropolia.fi'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
+id: 5
 ---
 
 ### Tarinallisuus ja tarinateatteri Maecenas sed diam eget risus varius

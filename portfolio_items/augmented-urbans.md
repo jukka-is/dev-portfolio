@@ -7,6 +7,7 @@ cover_image: '/images/portfolio/item-4-1.jpg'
 url: 'https://augmented-urbans.metropolia.fi'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
+id: 4
 ---
 
 ### Augmented Urbans Aenean lacinia bibendum nulla

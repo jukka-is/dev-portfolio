@@ -6,6 +6,7 @@ excerpt: 'Project included designing and developing a custom theme & functionali
 cover_image: '/images/portfolio/item-1-1.jpg'
 url: 'https://shopforsebastian.com'
 category: 'client'
+id: 1
 ---
 
 ### Sed posuere consectetur est at lobortis

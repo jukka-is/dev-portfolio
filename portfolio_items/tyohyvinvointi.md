@@ -7,6 +7,7 @@ cover_image: '/images/portfolio/item-6-1.jpg'
 url: 'https://www.tyohyvinvointiboosteri.fi/'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
+id: 6
 ---
 
 ### Työhyvinvointiboosteri Aenean lacinia bibendum nulla
