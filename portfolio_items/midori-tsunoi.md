@@ -4,7 +4,7 @@ description: 'Wordpress portfolio site for designer'
 techs: 'wordpress'
 excerpt: 'Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.'
 cover_image: '/images/portfolio/item-8-1.jpg'
-url: 'https://midoritsunoi.fi/'
+url: 'https://midoritsunoi.fi'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
 id: 8

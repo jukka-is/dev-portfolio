@@ -443,6 +443,7 @@ a.icon-link {
   position: fixed;
   z-index: 1;
   padding-top: 100px;
+  padding-bottom: 50px;
   left: 0;
   top: 0;
   width: 100%;
@@ -460,14 +461,85 @@ a.icon-link {
 .modal-content {
   background-color: var(--jik-gray-1);
   margin: auto;
-  padding: 20px;
+  padding: 10px;
   width: 80%;
+  background-color: var(--jik-gray-2);
+  color: var(--jik-gray-9);
 }
 
-.modal-content h2 {
+.modal-content .close-modal {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-content .portfolio-item {
+  padding: 2rem;
+}
+
+.modal-content .portfolio-item .title-section {
+  border-left: 15px solid var(--jik-light-teal);
+  padding-left: 15px;
+}
+
+.modal-content .portfolio-item .title-section .description {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.modal-content .portfolio-item .title-section h2 {
   color: var(--jik-light-teal);
+  margin-bottom: 1rem;
+}
+.modal-content .portfolio-item .meta {
+  list-style: none;
+  margin: 8px 0px 30px 0px;
 }
 
+.modal-content .portfolio-item .meta li {
+  margin-bottom: 8px;
+}
+
+.modal-content .portfolio-item .meta .pretitle {
+  text-transform: uppercase;
+  font-family: Aileron;
+  font-size: 0.8rem;
+  color: var(--jik-gray-7);
+}
+
+.modal-content .portfolio-item .meta .pretitle::after {
+  content: ':';
+  margin-right: 0.5rem;
+}
+
+.modal-content .portfolio-item .meta .data {
+  font-size: 0.85rem;
+}
+
+.modal-content .portfolio-item .main-content {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+.modal-content .portfolio-item .main-content .image {
+  object-fit: contain;
+  width: 100%;
+}
+
+.modal-content .portfolio-item .main-content .text {
+  width: 100%;
+}
+
+.modal-content .portfolio-item .main-content .text p {
+  margin-bottom: 0.5rem;
+}
+.modal-content .portfolio-item .main-content .text h3 {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  color: var(--jik-gray-8);
+}
 /* Mobile styles */
 
 @media only screen and (max-width: 680px) {
@@ -509,7 +581,30 @@ a.icon-link {
     font-size: 2rem;
     text-align: unset;
   }
+
+  .modal {
+    padding-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .modal-content {
+    width: 85%;
+  }
+
+  .modal-content .portfolio-item {
+    padding: 1rem;
+  }
+
+  .modal-content .portfolio-item .title-section {
+    border-left: unset;
+    padding-left: 0px;
+  }
+
+  .modal-content .portfolio-item .main-content {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: unset;
+    grid-gap: 30px;
+  }
 }

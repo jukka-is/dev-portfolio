@@ -4,7 +4,7 @@ description: 'Wordpress site for association homepage'
 techs: 'wordpress, php, rest api'
 excerpt: 'Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
 cover_image: '/images/portfolio/item-7-1.jpg'
-url: 'https://tekstiilitaiteilijattexo.fi/'
+url: 'https://tekstiilitaiteilijattexo.fi'
 category: 'client'
 client_name: 'Tekstiilitaiteilijat TEXO ry'
 id: 7

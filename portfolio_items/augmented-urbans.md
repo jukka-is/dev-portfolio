@@ -4,7 +4,7 @@ description: 'Wordpress publication for research project'
 techs: 'wordpress, sass, javascript, bootstrap, wcag'
 excerpt: 'Developed a custom theme for WordPress site that functioned as a final publication for Metropolia University of Applied Sciences project Augmented Urbans'
 cover_image: '/images/portfolio/item-4-1.jpg'
-url: 'https://augmented-urbans.metropolia.fi'
+url: 'https://augmentedurbans.metropolia.fi'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
 id: 4

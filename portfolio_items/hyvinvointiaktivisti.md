@@ -4,7 +4,7 @@ description: 'WordPress publication'
 techs: 'wordpress, sass, javascript, bootstrap, wcag'
 excerpt: 'Developed a custom theme for WordPress site that functioned as a final publication for Metropolia University of Applied Sciences project Hyvinvoinnin tilat'
 cover_image: '/images/portfolio/item-2-1.jpg'
-url: 'https://www.hyvinvointiaktivisti.fi/'
+url: 'https://www.hyvinvointiaktivisti.fi'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
 id: 2

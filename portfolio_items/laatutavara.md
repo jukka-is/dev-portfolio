@@ -4,7 +4,7 @@ description: 'WooCommerce webshop and info site'
 techs: 'wordpress, woocommerce, sass, javascript, bootstrap'
 excerpt: 'Developed a custom theme for WooCommerce webshop and information website'
 cover_image: '/images/portfolio/item-3-1.jpg'
-url: 'https://www.laatutavara.com/'
+url: 'https://www.laatutavara.com'
 category: 'client'
 client_name: 'Laatutavara.com'
 id: 3

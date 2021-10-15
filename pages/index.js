@@ -182,7 +182,7 @@ export async function getStaticProps() {
       path.join('portfolio_items', filename),
       'utf-8'
     );
-    const { data: meta } = matter(markdownWithMeta);
+    const { data: meta, content } = matter(markdownWithMeta);
 
     const techs = meta.techs.split(', ').map((name) => {
       return {
@@ -194,6 +194,7 @@ export async function getStaticProps() {
     return {
       slug,
       meta,
+      content,
       techs,
       isOpened,
       hasActiveTags,

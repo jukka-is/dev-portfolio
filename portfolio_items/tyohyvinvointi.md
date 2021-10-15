@@ -4,7 +4,7 @@ description: 'Wordpress publication for research project'
 techs: 'wordpress, sass, javascript, bootstrap'
 excerpt: 'Developed a custom theme for WordPress site that functioned as a final publication for Metropolia University of Applied Sciences project Työhyvinvointiboosteri'
 cover_image: '/images/portfolio/item-6-1.jpg'
-url: 'https://www.tyohyvinvointiboosteri.fi/'
+url: 'https://www.tyohyvinvointiboosteri.fi'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
 id: 6
