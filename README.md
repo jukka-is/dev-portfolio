@@ -21,12 +21,19 @@ This is repository for portfolio website for my front end web-develoment project
   - [x] portfolio sections
   - [x] info section
   - [x] tech tags
-  - [ ] details / modal
+  - [x] details / modal
 
 - [x] build custom icon font-set
 - [x] create CSS styles
-- [ ] add modal functionality for opening portfolio-item
-- [ ] add functionality for selecting and highlighting tech tags
+- [x] add modal functionality for opening portfolio-item
+- [x] add functionality for selecting and highlighting tech tags
 - [ ] add line drawing svg
+
+- add final content
+
+  - [ ] client work portfolio items
+  - [ ] private projects portfolio items
+  - [ ] introduction text
+  - [ ] about me text
 
 - [ ] set-up and deploy to Vercel
