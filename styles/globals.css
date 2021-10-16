@@ -116,26 +116,32 @@
 .ri-mail-line:before {
   content: '\eef6';
 }
-.ri-price-tag-3-line:before {
-  content: '\f023';
-}
-.ri-price-tag-3-fill:before {
-  content: '\f022';
-}
-.ri-phone-fill:before {
-  content: '\efe9';
-}
 .ri-mail-fill:before {
   content: '\eef3';
 }
 .ri-links-line:before {
   content: '\eeb8';
 }
-.ri-add-box-fill:before {
-  content: '\ea0e';
+.ri-close-circle-fill:before {
+  content: '\eb96';
 }
-.ri-checkbox-indeterminate-fill:before {
-  content: '\eb83';
+.ri-zoom-in-fill:before {
+  content: '\f2da';
+}
+.ri-filter-off-fill:before {
+  content: '\ed28';
+}
+.ri-team-fill:before {
+  content: '\f1ed';
+}
+.ri-price-tag-3-fill:before {
+  content: '\f022';
+}
+.ri-key-2-fill:before {
+  content: '\ee6e';
+}
+.ri-home-3-fill:before {
+  content: '\ee1a';
 }
 
 /* global styles */
@@ -347,8 +353,12 @@ a.icon-link {
 }
 
 .portfolio .item .button {
-  color: var(--jik-light-teal);
+  color: var(--jik-mid-teal);
   align-self: center;
+}
+
+.portfolio .item .button:hover {
+  color: var(--jik-light-teal);
 }
 
 /* Info section */
@@ -470,6 +480,11 @@ a.icon-link {
 .modal-content .close-modal {
   display: flex;
   justify-content: flex-end;
+  color: var(--jik-mid-teal);
+}
+
+.modal-content .close-modal:hover {
+  color: var(--jik-light-teal);
 }
 
 .modal-content .portfolio-item {
@@ -477,7 +492,7 @@ a.icon-link {
 }
 
 .modal-content .portfolio-item .title-section {
-  border-left: 15px solid var(--jik-light-teal);
+  border-left: 15px solid var(--jik-mid-teal);
   padding-left: 15px;
 }
 
@@ -489,7 +504,7 @@ a.icon-link {
 }
 
 .modal-content .portfolio-item .title-section h2 {
-  color: var(--jik-light-teal);
+  color: var(--jik-mid-teal);
   margin-bottom: 1rem;
 }
 .modal-content .portfolio-item .meta {
@@ -506,6 +521,11 @@ a.icon-link {
   font-family: Aileron;
   font-size: 0.8rem;
   color: var(--jik-gray-7);
+}
+
+.modal-content .portfolio-item .meta .pretitle .meta-icon {
+  vertical-align: -0.075rem;
+  margin-right: 0.15rem;
 }
 
 .modal-content .portfolio-item .meta .pretitle::after {

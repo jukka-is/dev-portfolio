@@ -10,7 +10,7 @@ function Modal({ modalState, closeModal }) {
           <div className="close-modal">
             <Button
               buttonType="icon-button"
-              buttonClass="close-modal ri-2x ri-checkbox-indeterminate-fill"
+              buttonClass="close-modal ri-2x ri-close-circle-fill"
               buttonTitle="close modal"
               onClick={closeModal}
             />
@@ -25,6 +25,7 @@ function Modal({ modalState, closeModal }) {
                   <MetaListItem
                     key="meta-client"
                     preTitle="Client"
+                    iconClasses="meta-icon ri-1x ri-team-fill"
                     data={modalState.item.meta.client_name}
                   />
                 )}
@@ -32,6 +33,7 @@ function Modal({ modalState, closeModal }) {
                   <MetaListItem
                     key="meta-keywords"
                     preTitle="Keywords"
+                    iconClasses="meta-icon ri-1x ri-price-tag-3-fill"
                     data={modalState.item.meta.techs}
                   />
                 )}
@@ -39,6 +41,7 @@ function Modal({ modalState, closeModal }) {
                   <MetaListItem
                     key="meta-url"
                     preTitle="Url"
+                    iconClasses="meta-icon ri-1x ri-home-3-fill"
                     data={modalState.item.meta.url}
                   />
                 )}

@@ -34,7 +34,7 @@ export default function PortfolioItem({ item, openModal }) {
         onClick={() => openModal(item)}
         aria-label={'Read more about ' + item.meta.title}
       >
-        <i className="ri-2x ri-add-box-fill" />
+        <i className="ri-2x ri-zoom-in-fill" />
       </button>
     </article>
   );
