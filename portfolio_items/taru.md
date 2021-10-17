@@ -1,17 +1,15 @@
 ---
 title: 'Tarinallisuus ja tarinateatteri'
-description: 'Wordpress publication for research project'
+description: 'Wordpress publication'
 techs: 'wordpress, sass, javascript, bootstrap, wcag'
-excerpt: 'Developed a custom theme for WordPress site that functioned as a final publication for Metropolia University of Applied Sciences project Tarinallisuus ja tarinateatteri'
+excerpt: 'Tarinallisuus ja tarinateatteri is a publication that collects contents of research project into accessable and visually interesting landing page.'
 cover_image: '/images/portfolio/item-5-1.jpg'
 url: 'https://taru.metropolia.fi'
 category: 'client'
 client_name: 'Metropolia University of Applied Sciences'
-id: 5
+id: 8
 ---
 
-### Tarinallisuus ja tarinateatteri Maecenas sed diam eget risus varius
+Metropolia University of Applied Sciences' project 'Tarinallisuus ja tarinateatteri' researched methods of utilising narration, story telling and drama in pedagogic work. Results of years-long project needed to be packaged in single-page publication that would have similar playful aesthethics as the research topic itself. Publication site had to meet WCAG 2.1 criterias for accessability, as project was publicly funded.
 
-Maecenas faucibus mollis interdum. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.
+Web-publication's visual identity and UI was desgined by [Muotografia](https://muotografia.fi/). My role in the project was to concept and develope custom Wordpress theme for the site, paying special attention for accessability all the way. Wordpress theme is utilising Bootstrap components, SASS build-process and Advanced Custom Fields.

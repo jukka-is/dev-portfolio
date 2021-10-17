@@ -1,17 +1,15 @@
 ---
 title: "Midori Tsunoi's portfolio"
-description: 'Wordpress portfolio site for designer'
+description: 'Wordpress portfolio site'
 techs: 'wordpress'
-excerpt: 'Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.'
+excerpt: 'Midori Tsunoi is an illustrtor and textile designer based in Helsinki, Finland. Her portfolio site needed to be natural, simple and clean, leaving space for her works to shine through.'
 cover_image: '/images/portfolio/item-8-1.jpg'
 url: 'https://midoritsunoi.fi'
 category: 'client'
-client_name: 'Metropolia University of Applied Sciences'
-id: 8
+client_name: 'textile designer Midori Tsunoi'
+id: 7
 ---
 
-### Midori Tsunoi's portfolio Aenean lacinia bibendum nulla
+Midori Tsunoi is an illustrtor and textile designer based in Helsinki, Finland. Her works are inspired by Finnish nature. Starting point for her new portfolio site was to reflect this: natural, simple and clean aesthethics.
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+My role in the project was to concept the structure, create UI designs and develope Wordpress theme for the site. In order to keep the content easily customisable for the client, site was built with page builder (Divi) and implemented as a child theme.

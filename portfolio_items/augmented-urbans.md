@@ -1,8 +1,8 @@
 ---
 title: 'Augmented Urbans'
-description: 'Wordpress publication for research project'
+description: 'Wordpress publication'
 techs: 'wordpress, sass, javascript, bootstrap, wcag'
-excerpt: 'Developed a custom theme for WordPress site that functioned as a final publication for Metropolia University of Applied Sciences project Augmented Urbans'
+excerpt: 'Augmented Urbans website is a final publication for a three-year collaborative research project in extended reality (XR) technologies. The goal was to create simple and distraction-free user-experience for reading the articles.'
 cover_image: '/images/portfolio/item-4-1.jpg'
 url: 'https://augmentedurbans.metropolia.fi'
 category: 'client'
@@ -10,10 +10,6 @@ client_name: 'Metropolia University of Applied Sciences'
 id: 4
 ---
 
-### Augmented Urbans Aenean lacinia bibendum nulla
+The website compiles the insights produced during Augmented Urbans, a three-year collaborative research project in extended reality (XR) technologies. The goal for the publication was to create simple and distraction-free user-experience for reading the articles.
 
-Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+My role in the project was to plan and develope then technical implementation of the publication based on the visuals designed by client's graphical designer. Publication was built on Wordpress platform with a custom theme covering the core functionalities needed. Theme utilizes Bootstrap components. Site included also custom jaavscript components, such as portfolio grid, that were created for this site.

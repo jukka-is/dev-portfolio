@@ -1,11 +1,11 @@
-function metaListItem({ preTitle, data, iconClasses }) {
+function metaListItem({ preTitle, data, iconClasses, metaType }) {
   return (
     <li>
       <span className="pretitle">
         <i className={iconClasses}></i>
         {preTitle}
       </span>
-      {preTitle === 'Url' ? (
+      {metaType === 'link' ? (
         <a href={data}>
           <span className="data">{data.replace(/(^\w+:|^)\/\//, '')}</span>
         </a>

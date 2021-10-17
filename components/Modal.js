@@ -37,11 +37,21 @@ function Modal({ modalState, closeModal }) {
                     data={modalState.item.meta.techs}
                   />
                 )}
+                {modalState.item.meta.git && (
+                  <MetaListItem
+                    key="meta-git"
+                    preTitle="Git"
+                    iconClasses="meta-icon ri-1x ri-github-fill"
+                    metaType="link"
+                    data={modalState.item.meta.git}
+                  />
+                )}
                 {modalState.item.meta.url && (
                   <MetaListItem
                     key="meta-url"
                     preTitle="Url"
                     iconClasses="meta-icon ri-1x ri-home-3-fill"
+                    metaType="link"
                     data={modalState.item.meta.url}
                   />
                 )}

@@ -1,8 +1,8 @@
 ---
 title: 'Työhyvinvointiboosteri'
-description: 'Wordpress publication for research project'
+description: 'Wordpress publication'
 techs: 'wordpress, sass, javascript, bootstrap'
-excerpt: 'Developed a custom theme for WordPress site that functioned as a final publication for Metropolia University of Applied Sciences project Työhyvinvointiboosteri'
+excerpt: 'Työhyvinvointiboosteri is a final publication for a joint applied research project by Metropolia University of Applied Sciences.'
 cover_image: '/images/portfolio/item-6-1.jpg'
 url: 'https://www.tyohyvinvointiboosteri.fi'
 category: 'client'
@@ -10,12 +10,8 @@ client_name: 'Metropolia University of Applied Sciences'
 id: 6
 ---
 
-### Työhyvinvointiboosteri Aenean lacinia bibendum nulla
+Työhyvinvointiboosteri is a final publication for a joint applied research project by Metropolia University of Applied Sciences. It sums up the results of two work life quality related projects into one practical handbook for enterpreneurs and small businesses. Challenge for the publication was, how to visualize and tell the results of an abstract topic in compelling way.
 
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.
+Together with graphical and UI designer from [Muotografia](https://muotografia.fi/), we started with concepting the site with client. During the concepting workshops we chose to divide the publication in three parts: visual stories of four example companies, easy to access and read handbook, and a section with in-depth articles.
 
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.
-
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-
-Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+Besides concepting, my role on the project was to plan and develope the custom Wordpress theme. Theme utilises components from Bootstrap. I also did the photography for visual stories section.

@@ -2,7 +2,7 @@
 title: 'Hyvinvointiaktivistin käsikirja'
 description: 'WordPress publication'
 techs: 'wordpress, sass, javascript, bootstrap, wcag'
-excerpt: 'Developed a custom theme for WordPress site that functioned as a final publication for Metropolia University of Applied Sciences project Hyvinvoinnin tilat'
+excerpt: "'Hyvinvointiaktivistin käsikirja' is part of final publication for three year research project conducted by Metropolia University of Applied Sciences. Goal for the site was to provide all project's articles in easy-to-access, understandable and visually interesting way."
 cover_image: '/images/portfolio/item-2-1.jpg'
 url: 'https://www.hyvinvointiaktivisti.fi'
 category: 'client'
@@ -10,10 +10,8 @@ client_name: 'Metropolia University of Applied Sciences'
 id: 2
 ---
 
-### Hyvinvointi Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+Final publication project was a joint effort with me and [Muotografia](https://muotografia.fi/). Together we facilitated concepting workshop with client to find out best form and structure for the site to present vast content or articles that the results of three-year research project.
 
-Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Muotografia designed the visual identity and UI for the site. I planned the technical implementation and developed a custom Wordpress theme, utilising some components from Bootstrap. In order to accommodate the structure of publication, with 6 main categories and 3 repeating thematic topics, data structure was made with help of custom post types and Advanced Custom Fields plugin.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.
-
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.
+Special attention was paid for the accessability of the site as client is regulated by standards for public sector in this regard. Site had to meet standards of WCAG 2.1 AA-level. This was taken in account in all steps of design and development from graphical design to technical implementation. At the end of the project, accessability criterias were tested and verified with client's accessability specialist.

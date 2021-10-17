@@ -2,15 +2,18 @@
 title: 'Shop for Sebastian'
 description: 'WooCommerce webshop'
 techs: 'wordpress, woocommerce, sass, javascript, bootstrap'
-excerpt: 'Project included designing and developing a custom theme & functionalities for WooCommerce webshop'
+excerpt: 'Shop for Sebastian is a webshop for Japanese lifestyle design. Project included concepting, designing and developing a custom WooCommerce theme to match the desired brand image for the new webshop.'
 cover_image: '/images/portfolio/item-1-1.jpg'
 url: 'https://shopforsebastian.com'
 category: 'client'
+client_name: 'Shop for Sebastian'
 id: 1
 ---
 
-### Sed posuere consectetur est at lobortis
+My role in the project started with concepting visual image and functional layout for the site and continued with technical implementation as well as conducting product photography.
 
-Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.
+Client's desire was to build a very minimalistic site with high quality photography to match brands represented in the shop. This was the starting point for the UI design as well.
 
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+Site was built on Wordpress / WooCommerce platform with a custom theme built utilising some components from Bootstrap 5. SASS-based workflow helped compiling style libraries from WooCommerce and Bootstrap together. Dependency on external plugins was kept at minimal level, with some exceptions, like Advanced Custom Fields.
+
+To match the clean and minimalistic feel of the site, I decided to build some features from scratch. An example of this is the image gallery feature for viewing product images. This was built with plain javascript.
