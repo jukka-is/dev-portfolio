@@ -9,24 +9,24 @@ const Info = ({ item, socialLinks }) => {
       <article className="about">
         <h2>About me</h2>
         <p>
-          I'm a freelance web-developer based in Helsinki, Finland. I have most
+          {`I'm a freelance web-developer based in Helsinki, Finland. I have most
           experience in developing applications with WordPress framework. This
           includes designing and developing custom themes for portfolio or
           publication sites, integrating them to external services via APIs and
-          building full-scale eCommerce-sites with WooCommerce.
+          building full-scale eCommerce-sites with WooCommerce.`}
         </p>
         <p>
-          Problem solving and learning something new everyday are drivers that
+          {`Problem solving and learning something new everyday are drivers that
           keep me motivated. For example, recently I have had the opportunity to
           work on projects that require speical attention for accessability.
           This has had an impact on the way I think about web-design in any
           project from now on. Through my personal projects, I have found the
           joy of experimenting and learning new skillsets that I can implement
-          in future client works as well.
+          in future client works as well.`}
         </p>
         <p>
-          If you'd like to co-operate in future projects, please don't hesitate
-          to contact me:
+          {`If you'd like to co-operate in future projects, please don't hesitate
+          to contact me:`}
         </p>
         <div className="icon-links">
           {socialLinks.map((socialLink) => (

@@ -110,9 +110,9 @@ export default function Home({ items, tags, socialLinks }) {
           </h1>
           <div className="subhead">
             <p className="text">
-              I'm a freelance web-developer based in Helsinki, Finland. Welcome
+              {`I'm a freelance web-developer based in Helsinki, Finland. Welcome
               to my portfolio! Here you will find a selection of my client works
-              as well as personal projects featuring these keywords:
+              as well as personal projects featuring keywords:`}
             </p>
             <ul className="tech-tags">
               <TagList tags={techTags} toggleTag={toggleTag} />
