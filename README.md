@@ -31,9 +31,9 @@ This is repository for portfolio website for my front end web-develoment project
 
 - add final content
 
-  - [ ] client work portfolio items
-  - [ ] private projects portfolio items
-  - [ ] introduction text
-  - [ ] about me text
+  - [x] client work portfolio items
+  - [x] private projects portfolio items
+  - [x] introduction text
+  - [x] about me text
 
-- [ ] set-up and deploy to Vercel
+- [x] set-up and deploy to Vercel
