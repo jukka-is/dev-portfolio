@@ -1,7 +1,7 @@
 ---
 title: 'Simple Class Based Shipping'
 description: 'Wordpress / WooCommerce plugin'
-techs: 'wordpress, woocommerce, php, javascript, git'
+techs: 'wordpress, woocommerce, php, git'
 excerpt: 'Simple Class Based Shipping (SCBS) is a Wordpress plugin which extends WooCommerce shipping methods. It enables custom shipping option for products in chosen shipping class.'
 cover_image: '/images/portfolio/item-9-1.jpg'
 git: 'https://github.com/aaxxiiss/simple-class-based-shipping-WC'
