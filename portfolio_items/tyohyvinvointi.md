@@ -1,7 +1,7 @@
 ---
 title: 'Työhyvinvointiboosteri'
 description: 'Wordpress publication'
-techs: 'wordpress, sass, javascript, bootstrap'
+techs: 'wordpress, scss, javascript, bootstrap'
 excerpt: 'Työhyvinvointiboosteri is a final publication for a joint applied research project by Metropolia University of Applied Sciences.'
 cover_image: '/images/portfolio/item-6-1.jpg'
 url: 'https://www.tyohyvinvointiboosteri.fi'

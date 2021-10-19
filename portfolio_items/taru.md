@@ -1,7 +1,7 @@
 ---
 title: 'Tarinallisuus ja tarinateatteri'
 description: 'Wordpress publication'
-techs: 'wordpress, sass, javascript, bootstrap, wcag'
+techs: 'wordpress, scss, javascript, bootstrap, wcag'
 excerpt: 'Tarinallisuus ja tarinateatteri is a publication that collects contents of research project into accessable and visually interesting landing page.'
 cover_image: '/images/portfolio/item-5-1.jpg'
 url: 'https://taru.metropolia.fi'

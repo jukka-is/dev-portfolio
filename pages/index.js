@@ -96,7 +96,7 @@ export default function Home({ items, tags, socialLinks }) {
           />
           <meta
             name="keywords"
-            content="Wordpress, WooCommerce, javascript, css, sass, bootstrap, php, node.js, nextjs"
+            content="Wordpress, WooCommerce, javascript, css, scss, bootstrap, php, node.js, nextjs"
           />
           <meta name="author" content="Jukka Isokoski" />
         </Head>

@@ -1,7 +1,7 @@
 ---
 title: 'Shop for Sebastian'
 description: 'WooCommerce webshop'
-techs: 'wordpress, woocommerce, sass, javascript, bootstrap'
+techs: 'wordpress, woocommerce, scss, javascript, bootstrap'
 excerpt: 'Shop for Sebastian is a webshop for Japanese lifestyle design. Project included concepting, designing and developing a custom WooCommerce theme to match the desired brand image for the new webshop.'
 cover_image: '/images/portfolio/item-1-1.jpg'
 url: 'https://shopforsebastian.com'

@@ -1,7 +1,7 @@
 ---
 title: 'Augmented Urbans'
 description: 'Wordpress publication'
-techs: 'wordpress, sass, javascript, bootstrap, wcag'
+techs: 'wordpress, scss, javascript, bootstrap, wcag'
 excerpt: 'Augmented Urbans website is a final publication for a three-year collaborative research project in extended reality (XR) technologies. The goal was to create simple and distraction-free user-experience for reading the articles.'
 cover_image: '/images/portfolio/item-4-1.jpg'
 url: 'https://augmentedurbans.metropolia.fi'

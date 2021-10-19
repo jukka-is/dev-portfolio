@@ -1,7 +1,7 @@
 ---
 title: 'Hyvinvointiaktivistin käsikirja'
 description: 'WordPress publication'
-techs: 'wordpress, sass, javascript, bootstrap, wcag'
+techs: 'wordpress, scss, javascript, bootstrap, wcag'
 excerpt: "'Hyvinvointiaktivistin käsikirja' is part of final publication for three year research project conducted by Metropolia University of Applied Sciences. Goal for the site was to provide all project's articles in easy-to-access, understandable and visually interesting way."
 cover_image: '/images/portfolio/item-2-1.jpg'
 url: 'https://www.hyvinvointiaktivisti.fi'

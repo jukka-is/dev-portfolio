@@ -1,7 +1,7 @@
 ---
 title: 'Laatutavara.com'
 description: 'WooCommerce webshop'
-techs: 'wordpress, woocommerce, sass, javascript, bootstrap'
+techs: 'wordpress, woocommerce, scss, javascript, bootstrap'
 excerpt: 'Laatutavara.com is webshop specialised in Scandinavian vintage design items since 2006. Site reneval included moving excisting vast product database to WooCommerce platform, building custom theme and functionalities to increase user experience on both desktop and mobile.'
 cover_image: '/images/portfolio/item-3-1.jpg'
 url: 'https://www.laatutavara.com'
