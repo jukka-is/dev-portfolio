@@ -11,4 +11,4 @@ id: 12
 
 If you wondered, how this portfolio site was made, you can find the project's repository at [Github](https://github.com/aaxxiiss/dev-portfolio).
 
-TLDR: Site is built on Next.js platform, content being markdown-files, React components built for this project only. Development, graphical and UI design by yours truly; hosted by Vercel.
+TLDR: Site is built on Next.js platform, content being markdown-files, React components built for this project only. Development, graphical, and UI design by yours truly; hosted by Vercel.

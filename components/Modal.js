@@ -16,7 +16,7 @@ function Modal({ modalState, closeModal }) {
             />
           </div>
           <div className="portfolio-item">
-            <div className="title-section">
+            <div className="title-section" id="modal-title">
               <p className="description">{modalState.item.meta.description}</p>
               <h2>{modalState.item.meta.title}</h2>
 
