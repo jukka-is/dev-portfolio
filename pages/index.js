@@ -15,10 +15,10 @@ export default function Home({ items, tags, socialLinks }) {
   const [portfolioItems, setPortfolioItems] = useState(items);
   const [modalState, setModalState] = useState({
     item: undefined,
-    isActive: false,
+    isActive: false
   });
 
-  const toggleTag = (toggledTag) => {
+  const toggleTag = toggledTag => {
     // update changes to title area's tech tags
     const updatedTags = [...techTags];
     techTags.forEach((tag, index) => {
@@ -36,7 +36,7 @@ export default function Home({ items, tags, socialLinks }) {
         if (toggledTag.name === tag.name) {
           updatedPortfolioItems[i].techs[j] = {
             ...updatedPortfolioItems[i].techs[j],
-            isActive: !tag.isActive,
+            isActive: !tag.isActive
           };
         }
       });
@@ -45,7 +45,7 @@ export default function Home({ items, tags, socialLinks }) {
     // update portfolio items' state whether item has active tags or not
     updatedPortfolioItems.forEach((item, i) => {
       let status = false;
-      item.techs.forEach((tag) => {
+      item.techs.forEach(tag => {
         if (tag.isActive) {
           status = true;
         }
@@ -56,7 +56,7 @@ export default function Home({ items, tags, socialLinks }) {
     setPortfolioItems(updatedPortfolioItems);
   };
 
-  const openModal = (item) => {
+  const openModal = item => {
     const updatedModalState = { item: item, isActive: true };
     setModalState(updatedModalState);
   };
@@ -110,8 +110,8 @@ export default function Home({ items, tags, socialLinks }) {
           </h1>
           <div className="subhead">
             <p className="text">
-              {`I'm a freelance web developer based in Helsinki, Finland. Welcome
-              to my portfolio! Here you will find a selection of my client works
+              {`I'm a web developer based in Helsinki, Finland. Welcome
+              to my portfolio! Here you will find a selection of my freelance works
               as well as personal projects featuring keywords:`}
             </p>
             <ul className="tech-tags">
@@ -124,7 +124,7 @@ export default function Home({ items, tags, socialLinks }) {
           <h2 className="heading-2">Freelance client projects</h2>
           <div className="grid">
             {portfolioItems
-              .filter((item) => item.meta.category === 'client')
+              .filter(item => item.meta.category === 'client')
               .map((item, index) => (
                 <PortfolioItem
                   key={'item-' + item.meta.id}
@@ -139,7 +139,7 @@ export default function Home({ items, tags, socialLinks }) {
           <h2 className="heading-2">Personal projects</h2>
           <div className="grid">
             {portfolioItems
-              .filter((item) => item.meta.category === 'personal')
+              .filter(item => item.meta.category === 'personal')
               .map((item, index) => (
                 <PortfolioItem
                   key={'item-' + item.meta.id}
@@ -152,7 +152,7 @@ export default function Home({ items, tags, socialLinks }) {
 
         <section className="info">
           {portfolioItems
-            .filter((item) => item.meta.category === 'current')
+            .filter(item => item.meta.category === 'current')
             .map((item, index) => (
               <Info
                 key={'item-' + item.meta.id}
@@ -172,7 +172,7 @@ export async function getStaticProps() {
   const files = fs.readdirSync(path.join('portfolio_items'));
 
   //create slug and get frontmatter for each portfolio item
-  const items = files.map((filename) => {
+  const items = files.map(filename => {
     const slug = filename.replace('.md', '');
     const isOpened = false;
     const hasActiveTags = false;
@@ -184,10 +184,10 @@ export async function getStaticProps() {
     );
     const { data: meta, content } = matter(markdownWithMeta);
 
-    const techs = meta.techs.split(', ').map((name) => {
+    const techs = meta.techs.split(', ').map(name => {
       return {
         name: name,
-        isActive: false,
+        isActive: false
       };
     });
 
@@ -197,7 +197,7 @@ export async function getStaticProps() {
       content,
       techs,
       isOpened,
-      hasActiveTags,
+      hasActiveTags
     };
   });
 
@@ -208,11 +208,11 @@ export async function getStaticProps() {
   const tags = [];
 
   // go through all portfolio items and add missing tags only once
-  items.map((item) => {
+  items.map(item => {
     const itemsTechs = item.meta.techs.split(', ');
 
-    item.techs.forEach((newTech) => {
-      if (!tags.find((existingTech) => existingTech.name === newTech.name)) {
+    item.techs.forEach(newTech => {
+      if (!tags.find(existingTech => existingTech.name === newTech.name)) {
         tags.push(newTech);
       }
     });
@@ -223,27 +223,27 @@ export async function getStaticProps() {
       id: 1,
       title: 'Github',
       url: 'https://github.com/aaxxiiss',
-      iconClasses: 'ri-github-fill',
+      iconClasses: 'ri-github-fill'
     },
     {
       id: 2,
       title: 'Twitter',
       url: 'https://twitter.com/jukkaisokoski',
-      iconClasses: 'ri-twitter-fill',
+      iconClasses: 'ri-twitter-fill'
     },
     {
       id: 3,
       title: 'email',
-      url: 'mailto:mail@jukkaisokoski.fi',
-      iconClasses: 'ri-mail-line',
-    },
+      url: 'mailto:jukka.isokoski@fmail.com',
+      iconClasses: 'ri-mail-line'
+    }
   ];
 
   return {
     props: {
       items: items,
       tags: tags,
-      socialLinks: socialLinks,
-    },
+      socialLinks: socialLinks
+    }
   };
 }

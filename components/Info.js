@@ -9,7 +9,7 @@ const Info = ({ item, socialLinks }) => {
       <article className="about">
         <h2>About me</h2>
         <p>
-          {`I'm a freelance web developer based in Helsinki, Finland. I have most
+          {`I'm a web developer based in Helsinki, Finland. I have most
           experience in developing applications with WordPress framework. This
           includes designing and developing custom themes for portfolio or
           publication sites, integrating them to external services via APIs and
@@ -28,7 +28,7 @@ const Info = ({ item, socialLinks }) => {
           to contact me:`}
         </p>
         <div className="icon-links">
-          {socialLinks.map((socialLink) => (
+          {socialLinks.map(socialLink => (
             <Button
               key={'info-link-' + socialLink.id}
               buttonType="icon-link"
@@ -47,7 +47,7 @@ const Info = ({ item, socialLinks }) => {
           <div
             className="text"
             dangerouslySetInnerHTML={{
-              __html: marked(item.content),
+              __html: marked(item.content)
             }}
           ></div>
           <ul className="tech-tags">
