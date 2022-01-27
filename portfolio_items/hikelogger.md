@@ -4,7 +4,7 @@ description: 'Hike Logger'
 techs: 'node.js, javascript, mongodb, css, api'
 excerpt: 'An application for logging hikes in the wilderness and sharing the data for added safety. I challenged myself to learn more about node.js as well as Google APIs with OAuth 2.0. Hike Logger is the result of that challenge.'
 cover_image: '/images/portfolio/item-11-1.jpg'
-git: 'https://github.com/aaxxiiss/hike-logger'
+git: 'https://github.com/jukka-is/hike-logger'
 category: 'personal'
 id: 11
 ---

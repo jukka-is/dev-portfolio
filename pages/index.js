@@ -222,7 +222,7 @@ export async function getStaticProps() {
     {
       id: 1,
       title: 'Github',
-      url: 'https://github.com/aaxxiiss',
+      url: 'https://github.com/jukka-is',
       iconClasses: 'ri-github-fill'
     },
     {
