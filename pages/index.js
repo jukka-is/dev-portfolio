@@ -234,7 +234,7 @@ export async function getStaticProps() {
     {
       id: 3,
       title: 'email',
-      url: 'mailto:jukka.isokoski@fmail.com',
+      url: 'mailto:jukka.isokoski@gmail.com',
       iconClasses: 'ri-mail-line'
     }
   ];
